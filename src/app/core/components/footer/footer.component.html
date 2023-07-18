@@ -5,6 +5,7 @@
     <button class="btn btn-dark button-item" *ngIf="this.authService.isLoggedIn" (click)="logout()">{{"Log out"}}</button>
   </div>
   <p>Website developed by Diego Pérez.</p>
+  <p>Log in with user: test@email.com | password: 12345678</p>
   <div class="btn-group menu-external" role="group" aria-label="Header buttons group">
     <button class="btn btn-dark button-item" (click)="gitHub()">{{"Check code on GitHub" | translate }}</button>
     <button class="btn btn-dark button-item" (click)="diegoWebsite()">{{"Go to Diego's website" | translate }}</button>
