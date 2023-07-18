@@ -1,0 +1,50 @@
+@import "../../styles/helpers";
+
+.about-box {
+  @include displayFlex(column wrap, center, center);
+  margin-top: 15vh;
+  @media (min-width: 600px) {
+    @include displayFlex(column wrap, center, center);
+    margin: 0;
+  }
+}
+
+.text-box {
+  @include displayFlex(column wrap, center, center);
+  max-width:600px;
+  padding: 2vh 2vh;
+  background: lightgrey;
+  border: none;
+  border-radius: 1vh;
+}
+
+.info-box {
+  @include displayFlex(row wrap, space-evenly, center);
+  margin-top: 2vh;
+  width: 600px;
+  .logo {
+    width: 200px;
+  }
+  .info {
+    @include displayFlex(column wrap, start, start);
+    // margin-left: 5vh;
+    width: 200px;
+  }
+  @media (min-width: 500x) {
+    @include displayFlex(column wrap, center, center);
+    // .info {
+      // margin: 0;
+    // }
+  }
+}
+
+.map {
+  height: 300px;
+  margin: 2vh auto;
+  @media (min-width: 550px) and (max-width: 750px) {
+    width: 400px;
+  }
+  @media (min-width: 750px) {
+    width:600px;
+  }
+}

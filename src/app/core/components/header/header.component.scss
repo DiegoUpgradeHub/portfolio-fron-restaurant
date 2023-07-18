@@ -1,0 +1,43 @@
+//Importaciones
+@import "../../../styles/helpers";
+
+.menu-mobile {
+  @include displayFlex(row wrap, space-between, center);
+  max-width: 450px;
+  width: 100%;
+  margin: 3vh auto;
+  padding: 0 1vh;
+  .logo {
+    width: 50px;
+  }
+}
+
+.menu-desktop {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .menu-desktop {
+    @include displayFlex(row wrap, center, center);
+    margin: 2vh auto;
+    .button-item {
+      width: 150px;
+    }
+  }
+  .menu-mobile {
+    display: none;
+  }
+}
+
+//Language toggle styles
+.toggleLanguages {
+  @include displayFlex(row wrap, start, center);
+  margin: 0 10px;
+}
+.languageFlag {
+  width: 30px;
+  margin: 2px;
+}
+.languageFlag:hover {
+  width: 35px;
+}

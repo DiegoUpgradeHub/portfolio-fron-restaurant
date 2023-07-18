@@ -1,0 +1,46 @@
+<div class="home-box">
+  <div class="intro-box">
+    <h3>Welcome to</h3>
+    <h1>Restaurant-X!</h1>
+    <p>Discover natural and delightful flavors in every bite.</p>
+    <h5>Enjoy the vegetarian experience!</h5>
+  </div>
+  <div class="menu-box">
+<!-- Salats module -->
+    <div class="salats category-box">
+      <h1 class="category-tittle">Salats</h1>
+      <ul class="products-list">
+        <li *ngFor="let product of productsList; let index = index">
+          <div *ngIf="product.category === 'salats'" class="product-card card" >
+            <img src="{{product.image}}" alt="{{product.name}}" class="card-img-top product-image">
+            <div class="card-body">
+              <h3 class="card-title">{{product.name | titlecase }}</h3>
+              <p class="product-ingredients card-text">{{product.ingredients}}</p>
+              <p class="product-price card-text">{{product.price | currency:'€ ' }}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+<!-- Main course module -->
+    <div class="main category-box">
+      <h1 class="category-tittle">Main Courses</h1>
+      <ul class="products-list">
+        <li *ngFor="let product of productsList; let index = index">
+          <div
+            *ngIf="product.category === 'main'"
+            class="product-card card"
+          >
+            <img src="{{product.image}}" alt="{{product.name}}" class="card-img-top product-image">
+            <div class="card-body">
+              <h3 class="card-title">{{product.name | titlecase }}</h3>
+              <p class="product-ingredients card-text">{{product.ingredients}}</p>
+              <p class="product-price card-text">{{product.price | currency:'€ ' }}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

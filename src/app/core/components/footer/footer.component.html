@@ -1,0 +1,12 @@
+<div class="footer-box">
+  <div class="btn-group menu-crm" role="group" aria-label="Header buttons group">
+    <button class="btn btn-dark button-item" *ngIf="!this.authService.isLoggedIn" routerLink="/signin"><i class="bi bi-box-arrow-in-right"></i> {{"Log in" | translate }}</button>
+    <button class="btn btn-dark button-item" *ngIf="this.authService.isLoggedIn" (click)="profile()">{{"My area" | translate }}</button>
+    <button class="btn btn-dark button-item" *ngIf="this.authService.isLoggedIn" (click)="logout()">{{"Log out"}}</button>
+  </div>
+  <p>Website developed by Diego Pérez.</p>
+  <div class="btn-group menu-external" role="group" aria-label="Header buttons group">
+    <button class="btn btn-dark button-item" (click)="gitHub()">{{"Check code on GitHub" | translate }}</button>
+    <button class="btn btn-dark button-item" (click)="diegoWebsite()">{{"Go to Diego's website" | translate }}</button>
+  </div>
+</div>

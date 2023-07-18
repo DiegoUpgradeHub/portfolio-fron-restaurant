@@ -1,0 +1,39 @@
+<div class="edit-user-page">
+  <h2>Formulario para editar productos</h2>
+  <form [formGroup]="editProductForm" (ngSubmit)="editingThisProduct(this.product._id)">
+      <fieldset disabled>
+        <div class="form">
+          <label>ID del producto</label>
+          <input type="text" class="form-control mb-2" formControlName="_id" placeholder="Id del producto" required value="{{this.product._id}}">
+        </div>
+      </fieldset>
+      <div class="form">
+        <label>Nombre</label>
+        <input type="text" class="form-control mb-2" formControlName="name" placeholder="Nombre" required value="{{this.product.name}}">
+      </div>
+      <div class="form">
+        <label>Precio</label>
+        <input type="text" class="form-control mb-2" formControlName="price" placeholder="Precio" required value="{{this.product.price}}">
+      </div>
+      <div class="form">
+        <label>Ingredientes</label>
+        <input type="text" class="form-control mb-2" formControlName="ingredients" placeholder="Ingredientes" required value="{{this.product.ingredients}}">
+      </div>
+      <div class="form">
+        <label>Imagen</label>
+        <input type="text" class="form-control mb-2" formControlName="image" placeholder="Imagen del producto" required value="{{this.product.image}}">
+      </div>
+      <div class="form mb-3">
+        <label>Categoría</label>
+        <select class="form-select form-control" formControlName="category" required value="{{this.product.category}}">
+          <option value="salats">Salats</option>
+          <option value="main">Main course</option>
+          <option value="drinks">Drinks</option>
+        </select>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="submit" class="btn btn-warning">Editar producto</button>
+      </div>
+  </form>
+
+</div>

@@ -1,0 +1,35 @@
+<div class="create-product-page">
+
+  <form [formGroup]="createForm" (ngSubmit)="creatingProduct()">
+      <h2>Formulario para crear productos</h2>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" formControlName="name" placeholder="Nombre" required id="floatingInput">
+        <label for="floatingInput">Nombre</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" formControlName="price" placeholder="Precio" required id="floatingInput">
+        <label for="floatingInput">Precio</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" formControlName="ingredients" placeholder="Ingredientes" required id="floatingInput">
+        <label for="floatingInput">Ingredientes</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" formControlName="image" placeholder="URL de la imagen" required id="floatingInput">
+        <label for="floatingInput">Imagen</label>
+      </div>
+      <div class="mb-3">
+        <label>Categoría</label>
+        <select class="form-select form-control" formControlName="category" aria-label="category" required>
+          <option value="salats">Salats</option>
+          <option value="main">Main course</option>
+          <option value="drinks">Drinks</option>
+        </select>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="submit" class="btn btn-warning">Crear producto</button>
+      </div>
+  </form>
+
+</div>
+≤

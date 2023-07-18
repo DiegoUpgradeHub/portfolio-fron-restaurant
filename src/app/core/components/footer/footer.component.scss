@@ -1,0 +1,25 @@
+@import "../../../styles/helpers";
+
+.footer-box {
+  @include displayFlex(column wrap, center, center);
+  // @include dark();
+  margin: 10px 0;
+  width: 100vh;
+  height: 200px;
+  border-radius: 1vh;
+}
+
+.menu-crm {
+  width: 350px;
+  margin: 1vh 0;
+  @media (min-width: 600px) {
+    width: 600px;
+  }
+}
+
+.menu-external {
+  width: 350px;
+  @media (min-width: 600px) {
+    width: 600px;
+  }
+}

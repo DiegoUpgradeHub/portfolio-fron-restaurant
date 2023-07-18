@@ -1,0 +1,35 @@
+<!-- Phone -->
+<div class="menu-mobile fixed-top">
+  <div>
+    <img class="logo" src="https://freesvg.org/img/chef-restaurant-logo-publicdomainvectors.png" alt="restaurant logo"/>
+  </div>
+  <div class="dropdown">
+    <!-- Icon menu -->
+    <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+    <!-- Dropdown menu -->
+    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+      <li><button class="dropdown-item"  routerLink="/home">{{"Home" | translate }}</button></li>
+      <li><button class="dropdown-item"  routerLink="/about">{{"About" | translate }}</button></li>
+      <li>
+        <div class="toggleLanguages">
+          <img src="https://cdn-icons-png.flaticon.com/512/3054/3054075.png" alt="Spanish" class="languageFlag" (click)="setSpanish()"/>
+          <img src="https://cdn-icons-png.flaticon.com/512/4009/4009124.png" alt="English" class="languageFlag" (click)="setEnglish()"/>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Desktop -->
+<div class="menu-desktop">
+  <div class="btn-group menu-desktop" role="group" aria-label="Header buttons group">
+    <button class="btn btn-dark button-item" routerLink="/home">{{"Home" | translate }}</button>
+    <button class="btn btn-dark button-item" routerLink="/about">{{"About" | translate }}</button>
+  </div>
+  <div class="toggleLanguages">
+    <img src="https://cdn-icons-png.flaticon.com/512/3054/3054075.png" alt="Spanish" class="languageFlag" (click)="setSpanish()"/>
+    <img src="https://cdn-icons-png.flaticon.com/512/4009/4009124.png" alt="English" class="languageFlag" (click)="setEnglish()"/>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+//Importaciones
+@import "../../styles/helpers";
+@import "../../styles/colors";
+
+.home-box {
+  @include displayFlex(column wrap, center, center);
+  margin: 15vh 0;
+  @media (min-width: 600px) {
+    @include displayFlex(column wrap, center, center);
+    margin: 0;
+    width: 100%;
+    padding: 0 3vh;
+  }
+}
+
+.intro-box {
+  @include displayFlex(column wrap, center, center);
+  max-width:600px;
+  padding: 2vh 2vh;
+  margin-bottom: 15px;
+  background: lightgrey;
+  border: none;
+  border-radius: 1vh;
+}
+
+.category-box {
+  @include displayFlex(column wrap, center, center);
+  @media (min-width: 867px) {
+    @include displayFlex(column wrap, start, start);
+  }
+}
+
+.category-tittle {
+  padding: 0;
+  @media (min-width: 600px) {
+    padding: 0 6vh;
+  }
+}
+
+.products-list {
+  @include displayFlex(column wrap, center, center);
+  margin: 0 auto;
+  padding: 0;
+  @media (min-width: 600px) and (max-width: 867px) {
+    @include displayFlex(row wrap, center, start);
+  }
+  @media (min-width: 867px) {
+    @include displayFlex(row wrap, start, start);
+    margin: 0;
+    padding: 1vh;
+  }
+}
+
+.edit-delete-box {
+  padding: 1vh;
+}
+
+.product-card {
+  @include dark();
+  border: none;
+  max-width: 350px;
+  width: 90%;
+  margin: 1vh auto;
+  .product-image {
+    height: 100px;
+    object-fit: cover;
+  }
+  @media (min-width: 600px) and (max-width: 867px) {
+    margin: 1vh;
+    width: 250px;
+  }
+  @media (min-width: 867px) {
+    width: 350px;
+    margin: 1vh;
+    .product-image {
+      height: 300px;
+    }
+  }
+}
+

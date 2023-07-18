@@ -1,0 +1,88 @@
+ul {
+  list-style: none;
+}
+
+.all-product-page {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-top {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .top-buttons {
+    margin: 2px;
+    width: 400px;
+  }
+}
+
+.search-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  max-width: 600px;
+}
+
+.filters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.product-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: start;
+  margin: 10px;
+  padding: 5px;
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+  /* Created with https://www.css-gradient.com */
+  background: #ECECEC;
+  background: -webkit-linear-gradient(top left, #ECECEC, #FFFFFF);
+  background: -moz-linear-gradient(top left, #ECECEC, #FFFFFF);
+  background: linear-gradient(to bottom right, #ECECEC, #FFFFFF);
+}
+
+.product-image {
+  height: 190px;
+  max-width: 80px;
+  object-fit: cover;
+}
+
+.info-box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: start;
+  margin-left: 10px;
+  .restaurantPrice {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.more-info-btn {
+  width: 390px;
+}
+

@@ -1,0 +1,16 @@
+<div class="signin-product-page">
+  <form class="form-signin" [formGroup]="signinForm" (ngSubmit)="loginUser()">
+      <h3>{{"Sign in" | translate }}</h3>
+      <div>
+          <label>{{"Email" | translate }}</label>
+          <input type="email" class="form-control" formControlName="email" placeholder="Enter email" required>
+      </div>
+      <div>
+          <label>{{"Password" | translate }}</label>
+          <input type="password" class="form-control" formControlName="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-success">
+        {{"Sign in" | translate }}
+      </button>
+  </form>
+</div>
