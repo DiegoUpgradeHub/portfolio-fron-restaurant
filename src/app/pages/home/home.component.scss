@@ -15,19 +15,27 @@
 
 .intro-box {
   @include displayFlex(column wrap, center, center);
-  max-width:600px;
+  width:600px;
+  // width: auto;
   padding: 2vh 2vh;
   margin-bottom: 15px;
   background: lightgrey;
   border: none;
   border-radius: 1vh;
+  @media (max-width: 700px) {
+    width: auto;
+  }
 }
 
 .category-box {
   @include displayFlex(column wrap, center, center);
   @media (min-width: 867px) {
-    @include displayFlex(column wrap, start, start);
+    @include displayFlex(column wrap, center, center);
   }
+}
+
+.menu-box {
+  @include displayFlex(column wrap, center, center);
 }
 
 .category-tittle {
@@ -45,7 +53,7 @@
     @include displayFlex(row wrap, center, start);
   }
   @media (min-width: 867px) {
-    @include displayFlex(row wrap, start, start);
+    @include displayFlex(row wrap, center, start);
     margin: 0;
     padding: 1vh;
   }
